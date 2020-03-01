@@ -7,11 +7,13 @@ Docker Envirement for PHP 5.6 &amp; MySQL &amp; NGINX
       - nginx
       - PHP 5.6
       - mysql
-      - memcache (опционально)
+      - memcache (опционально, надо раскоментировать для раоты)
      
     ### Структура  
  
     - backup (бекапы базы при старте)
+    - data (данные хранимые вне контейнера)
+        - mysql
     - etc (файлы конфигов)
         - mysql
         - php 
@@ -21,9 +23,8 @@ Docker Envirement for PHP 5.6 &amp; MySQL &amp; NGINX
     - docker-compose.yaml (настройки контейнеров)
 
 ##### ВАЖНО
- - Первый запуск сделать по принципу docker-compose up
- - запуск понтейнера с восстановлением mysql из бекапа "sh dock-start.sh"
- - остановка контейнера с предварительным бекапом всех баз в mysql "sh dock-stop.sh"
+ - Запуск - docker-compose up (-d фоново)
+ - Остановка - docker-compose down (при работе в фоне) / Ctrl + C
  - на Mac Os для указания в настройках mysqli connect в своем приложении имя хоста mysql указывать как "docker.for.mac.host.internal"
 
 ##### Автор
