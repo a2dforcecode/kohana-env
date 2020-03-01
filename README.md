@@ -1,5 +1,5 @@
 # kohana-env
-Docker Envirement for PHP 5.6 &amp; MySQL &amp; NGINX 
+Docker Environment for PHP 5.6 &amp; MySQL &amp; NGINX 
 
 ## Описание
   - Данный репозиторий предназначен для поднятия через docker окружения для разработки в PHP
