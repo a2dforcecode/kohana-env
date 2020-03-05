@@ -15,7 +15,7 @@ services:
       - kohana
 
   php-fpm:
-    image: webdevops/php-dev:5.6
+    image: cytopia/php-fpm-5.6
     hostname: php-fpm
     volumes:
       - "./www:/www"
